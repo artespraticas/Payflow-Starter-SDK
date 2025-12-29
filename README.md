@@ -1,39 +1,34 @@
-# 🌱 Payflow
+# 🌱 Payflow — Template Repo
 
-Gasless subscriptions, streaming, and micropayments in USDC — built for Arc.
+Gasless subscriptions, streaming payments, and micropayments in USDC.
+Built for the Arc ecosystem.
 
-## ✨ Overview
+## 🚀 What is this?
 
-Payflow is a smart-contract protocol that enables recurring payments, streaming payments,
-and pay-per-use billing where users pay exclusively in USDC — including gas fees.
+This is a **starter template** for building apps that use:
+- USDC as payment
+- USDC as gas
+- Account abstraction wallets
+- Onchain subscriptions & usage-based billing
 
-No ETH. No friction. No trust.
+Perfect for:
+- Hackathons
+- MVPs
+- Ecosystem projects
 
-## 🔑 Features
+## 🧱 Packages
 
-- USDC-only payments
-- Gas paid in USDC
-- Pull-based subscriptions
-- Cancel anytime
-- Human-readable transaction descriptions
-- Streaming & usage-based billing
+| Folder | Purpose |
+|------|--------|
+| contracts | Solidity smart contracts |
+| sdk | TypeScript SDK |
+| frontend | Next.js demo app |
+| examples | Minimal integrations |
+| docs | Architecture & pitch |
 
-## 🧱 Architecture
+## 🧪 Quick Start
 
-Smart Wallet (AA)
-  ↓
-SubscriptionManager
-  ↓
-USDC (ERC20)
-
-## 🧪 Contracts
-
-- SubscriptionManager.sol
-- SubscriptionVault.sol
-- MockUSDC.sol (testing)
-
-## 🧪 Testing
-
-### Hardhat
 ```bash
-npx hardhat test
+pnpm install
+pnpm contracts:test
+pnpm frontend:dev
